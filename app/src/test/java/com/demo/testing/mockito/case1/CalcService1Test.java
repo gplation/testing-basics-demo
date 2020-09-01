@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 public class CalcService1Test {
 
     @Test
-    void testCalc() {
+    public void testCalc() {
 
         // Arrange (Given)
         AddService addService = mock(AddService.class);
