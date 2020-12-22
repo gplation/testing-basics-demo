@@ -38,4 +38,9 @@ public class Store {
     public void setVipDiscountPercentage(double vipDiscountPercentage) {
         this.vipDiscountPercentage = vipDiscountPercentage;
     }
+
+    public boolean hasAsVip(User user) {
+//        return vipUsers.stream().anyMatch(v -> v == user.getUserId());
+        return vipUsers.contains(user.getUserId());
+    }
 }

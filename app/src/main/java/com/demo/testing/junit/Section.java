@@ -21,5 +21,16 @@ public class Section {
         return Collections.unmodifiableList(students);
     }
 
+    public void enroll(Student student) {
+        students.add(student);
+    }
+
+    public void drop(Student student) {
+        if (!students.contains(student))
+            throw new IllegalArgumentException();
+
+        students.remove(student);
+    }
+
     /* To be filled later */
 }

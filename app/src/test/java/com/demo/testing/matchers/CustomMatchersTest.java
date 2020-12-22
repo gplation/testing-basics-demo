@@ -2,6 +2,7 @@ package com.demo.testing.matchers;
 
 import org.junit.Test;
 
+import static com.demo.testing.matchers.DivisibleBy.divisibleBy;
 import static com.demo.testing.matchers.IsOnlyDigits.onlyDigits;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -28,7 +29,7 @@ public class CustomMatchersTest {
         Integer ten = 10;
         Integer two = 2;
 
-//        assertThat(ten, is(divisibleBy(two)));
+        assertThat(ten, is(divisibleBy(two)));
     }
 
     @Test
@@ -36,6 +37,6 @@ public class CustomMatchersTest {
         Integer eleven = 11;
         Integer two = 2;
 
-//        assertThat(eleven, is(not(divisibleBy(two))));
+        assertThat(eleven, is(not(divisibleBy(two))));
     }
 }

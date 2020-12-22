@@ -9,11 +9,11 @@ import org.junit.rules.TestRule;
 
 public class TestRuleTest {
 
-    @Rule
-    public MyTestRule myRule = new MyTestRule();
-
-    @Rule
-    public YourTestRule yourRule = new YourTestRule();
+//    @Rule
+//    public MyTestRule myRule = new MyTestRule();
+//
+//    @Rule
+//    public YourTestRule yourRule = new YourTestRule();
 
 //    @Rule
 //    public TestRule compositeRule = RuleChain.outerRule(new MyTestRule())
